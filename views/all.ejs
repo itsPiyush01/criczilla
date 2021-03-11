@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= item %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% item.forEach((item)=>{ %>
+      <p> <%=item.NAME %>|<%=item.ID %> |<%=item.COUNTRY %>   | <%= item.Birthplace %>  </p>
+        <% }) %>
+    <!-- <p>Welcome to </p> -->
+  </body>
+</html>
