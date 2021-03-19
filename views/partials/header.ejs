@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricZilla</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">  -->
     <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Righteous&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet"> 
-    <title>CricZilla</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <div class="container">   
     <header class="header">
     <a class="header__logo" href="/">CricZilla</a>
    
-    <form class="search" href="/all">
+    <form class="search" href="/all" >
+    <!-- <form class="search" href="/all" onclick="showSuggestions(this)"> -->
         <input class="search__input" id="search__input" type="text" placeholder="" autocomplete="off">
-        <button type="submit" class="search__button">
+        <!-- <button type="submit" class="search__button">
             <div class="search__icon"></div>
-        </button>
+        </button> -->
+        <ul class="search__suggestions enable"  id="suggestions">
+            <!-- <a class="search__suggestion__link" href="/"><img class="player__img" src="https://p.imgci.com/db/PICTURES/CMS/314800/314812.jpg" ></img><p class="player__name">  Aman Sud <span class="hl"> Kumar </span> Abhiroope <p> <p class="player__fullName"> AmanSAHJSH HAS shda shad </p>  </a> -->
+            <!-- <a class="search__suggestion__link"><img src="https://p.imgci.com/db/PICTURES/CMS/271800/271814.jpg" alt="img">   Abhishek Gupta</a>
+            <a class="search__suggestion__link"> <img src="https://www.espncricinfo.com/inline/content/image/1132211.html"></img> <span>Abhishek</span> Kaushik</a> -->
+            <!-- <a class="search__suggestion__link"> <img src="images/default-picture.png"> <span >Abhis</span>hek Kaushik</a> -->
+            <!-- <a class="search__suggestion__link" href="/"><img class="player__img" src="https://www.espncricinfo.com/inline/content/image/1220600.html"></img><p class="player__name"><span class="hl">MS</span> Dhoni </p> <p class="player__fullName"> Mahendra Singh Dhoni  </p>  </a> -->
+            <!-- <a class="search__suggestion__link" href="/"><img class="player__img" ></img><p class="player__name"><span>MS</span>Dhoni </p> <p class="player__fullName"> Mahendra Singh Dhoni </p>  </a> -->
+            
+        </ul>
+
+        
     </form>
     <div class="header__menu">    
         <div class="navbar__nav">
