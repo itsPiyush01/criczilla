@@ -1,0 +1,838 @@
+[
+   {
+      "name": "Abhimanyu Singh",
+      "_id": "380104",
+      "full_name": "Abhimanyu Singh",
+      "date_of_birth": "1992-05-07T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Mohammed Abid Khan",
+      "_id": "318181",
+      "full_name": "Mohammed Abid Khan",
+      "date_of_birth": "1985-12-01T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Gurkirat Ahluwalia",
+      "_id": "390196",
+      "full_name": "Gurkirat Singh Ahluwalia",
+      "date_of_birth": "1988-07-26T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Habeeb Ahmed",
+      "_id": "317708",
+      "full_name": "Habeeb Ahmed",
+      "date_of_birth": "1987-11-07T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Ajit Pal Singh",
+      "_id": "391932",
+      "full_name": "Ajit Pal Singh",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Palani  Amarnath",
+      "_id": "290629",
+      "full_name": "Palani Amarnath",
+      "date_of_birth": "1982-06-01T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/322378.html"
+   },
+   {
+      "name": "Ameek Khan",
+      "_id": "391715",
+      "full_name": "Ameek Khan",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Amit",
+      "_id": "279458",
+      "full_name": "Amit",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Amriteshwar Singh",
+      "_id": "278484",
+      "full_name": "Amriteshwar Singh",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Amzad Ali",
+      "_id": "324521",
+      "full_name": "Amzad Ali",
+      "date_of_birth": "1991-09-27T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Harsh Anand",
+      "_id": "340873",
+      "full_name": "Harsh Anand",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Ananya Upendran",
+      "_id": "798107",
+      "full_name": "Ananya Upendran",
+      "date_of_birth": "1991-10-23T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Arminder Singh",
+      "_id": "390733",
+      "full_name": "Arminder Singh",
+      "date_of_birth": "1991-01-18T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Arun Kumar",
+      "_id": "380105",
+      "full_name": "Arun Kumar",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Asif Khan",
+      "_id": "340870",
+      "full_name": "Asif Khan",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Sangram Atitkar",
+      "_id": "327122",
+      "full_name": "Sangram Dilip Atitkar",
+      "date_of_birth": "1988-01-23T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/597708.html"
+   },
+   {
+      "name": "Digamber Attri",
+      "_id": "390839",
+      "full_name": "Digamber Singh Attri",
+      "date_of_birth": "1985-04-18T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Awijit Singh",
+      "_id": "390398",
+      "full_name": "Awijit Singh",
+      "date_of_birth": "1990-01-09T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "V Aakash",
+      "_id": "1151303",
+      "full_name": "V Aakash",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Aakash Singh",
+      "_id": "958481",
+      "full_name": "Aakash Singh",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Rajendra Aametha",
+      "_id": "1081379",
+      "full_name": "Rajendra Aametha",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Aamir Aziz",
+      "_id": "589136",
+      "full_name": "Aamir Aziz Sofi",
+      "date_of_birth": "1990-08-12T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Aamir Sofi",
+      "_id": "947811",
+      "full_name": "Aamir Ashraf Sofi",
+      "date_of_birth": "1992-11-07T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Aaqib Khan",
+      "_id": "1207680",
+      "full_name": "Aaqib Khan",
+      "date_of_birth": "2003-12-25T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Aaquib Nazir",
+      "_id": "1122921",
+      "full_name": "Aaquib Nazir Ahmad Hakeem",
+      "date_of_birth": "1995-03-25T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "A Aarif",
+      "_id": "1108366",
+      "full_name": "A Aarif",
+      "date_of_birth": "1992-06-09T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Leslie Aaron",
+      "_id": "26582",
+      "full_name": "Leslie Aaron",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Sandy Aaron",
+      "_id": "26585",
+      "full_name": "Sandy Aaron",
+      "date_of_birth": "1929-06-22T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Varun Aaron",
+      "_id": "360911",
+      "full_name": "Varun Raymond Aaron",
+      "date_of_birth": "1989-10-29T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/728843.html?alt=1"
+   },
+   {
+      "name": "Aashish Srikrishnan",
+      "_id": "1108374",
+      "full_name": "Aashish Srikrishnan",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "KA Aashrith",
+      "_id": "26427",
+      "full_name": "Kataputur Ashok Aashrith",
+      "date_of_birth": "1987-01-10T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/26426.html"
+   },
+   {
+      "name": "Abbas",
+      "_id": "26586",
+      "full_name": "Abbas",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Salim Abbas",
+      "_id": "26159",
+      "full_name": "Salim Abbas",
+      "date_of_birth": "1984-11-06T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Sultan Abbas",
+      "_id": "26588",
+      "full_name": "Sultan Abbas",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Tahir Abbas",
+      "_id": "26161",
+      "full_name": "Tahir Abbas",
+      "date_of_birth": "1984-12-24T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/26160.html"
+   },
+   {
+      "name": "Abbasmiya of Rajkot",
+      "_id": "26590",
+      "full_name": "KS Abbasmiya",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abbas Ali",
+      "_id": "26550",
+      "full_name": "Syed Abbas Ali",
+      "date_of_birth": "1976-02-20T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/325863.html?alt=1"
+   },
+   {
+      "name": "Abbas Ali Khan",
+      "_id": "26511",
+      "full_name": "Abbas Ali Khan",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abbas Khan",
+      "_id": "26587",
+      "full_name": "Abbas Khan",
+      "date_of_birth": "1911-07-01T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abbas Raza",
+      "_id": "290655",
+      "full_name": "Abbas Raza",
+      "date_of_birth": "1982-02-04T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abbas Shah",
+      "_id": "26589",
+      "full_name": "Abbas Shah",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Ela Qureshi",
+      "_id": "1252357",
+      "full_name": "Abdul Ela Qureshi",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Kadar",
+      "_id": "26362",
+      "full_name": "Dawood Muzawar Abdul Kadar",
+      "date_of_birth": "1982-03-05T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/26361.html"
+   },
+   {
+      "name": "Khan Abdulla",
+      "_id": "26603",
+      "full_name": "Khan C Abdulla",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Mohammad Abdulla",
+      "_id": "26604",
+      "full_name": "Mohammad J Abdulla",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdullah",
+      "_id": "26605",
+      "full_name": "Abdullah",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Azeem",
+      "_id": "26307",
+      "full_name": "Abdul Azeem",
+      "date_of_birth": "1960-06-10T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Azim",
+      "_id": "26163",
+      "full_name": "Abdul Azim",
+      "date_of_birth": "1955-01-06T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/26162.html"
+   },
+   {
+      "name": "Abdul Aziz",
+      "_id": "26338",
+      "full_name": "Abdul Aziz",
+      "date_of_birth": "1905-08-15T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Aziz",
+      "_id": "26591",
+      "full_name": "S Abdul Aziz",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Chand",
+      "_id": "1081750",
+      "full_name": "Abdul Chand",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Hai",
+      "_id": "26592",
+      "full_name": "Abdul Hai",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Hai",
+      "_id": "26593",
+      "full_name": "Mohammad Abdul Hai",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1101069.html"
+   },
+   {
+      "name": "Abdul Hamid",
+      "_id": "26594",
+      "full_name": "Abdul Hamid",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Kadir",
+      "_id": "26595",
+      "full_name": "KS Abdul Kadir",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Khalek",
+      "_id": "1037173",
+      "full_name": "Abdul Khalek",
+      "date_of_birth": "1988-03-14T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Khaliq",
+      "_id": "26596",
+      "full_name": "KS Abdul Khaliq",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Latif",
+      "_id": "26597",
+      "full_name": "Abdul Latif",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Majid",
+      "_id": "26598",
+      "full_name": "Abdul Majid",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Rashid",
+      "_id": "26599",
+      "full_name": "Abdul Rashid",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Rashid",
+      "_id": "26495",
+      "full_name": "Abdul Rashid",
+      "date_of_birth": "1986-04-12T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/26494.html"
+   },
+   {
+      "name": "Abdul Safar",
+      "_id": "1159741",
+      "full_name": "V Salim Abdul Safar",
+      "date_of_birth": "1993-07-02T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Salim",
+      "_id": "26600",
+      "full_name": "Abdul Salim",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Samad",
+      "_id": "1175485",
+      "full_name": "Abdul Samad Farooq",
+      "date_of_birth": "2001-10-28T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1202105.html"
+   },
+   {
+      "name": "Abdul Shakoor",
+      "_id": "26601",
+      "full_name": "Abdul Shakoor",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdul Wahab",
+      "_id": "26602",
+      "full_name": "Abdul Wahab",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abdus Salaam",
+      "_id": "26606",
+      "full_name": "Abdus Salaam",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhay",
+      "_id": "1206027",
+      "full_name": "Uday Kumar Abhay",
+      "date_of_birth": "1983-08-17T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhay Joshi",
+      "_id": "1170237",
+      "full_name": "Abhay Joshi",
+      "date_of_birth": "1983-08-17T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhijeet Garg",
+      "_id": "1166010",
+      "full_name": "Abhijeet Garg",
+      "date_of_birth": "1995-12-26T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhijeet Saket",
+      "_id": "1163686",
+      "full_name": "Abhijeet Saket",
+      "date_of_birth": "1995-08-03T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1212388.html?alt=1"
+   },
+   {
+      "name": "Abhijit Bhattacharya",
+      "_id": "733337",
+      "full_name": "Abhijit Bhattacharya",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhijit",
+      "_id": "26166",
+      "full_name": "Abhijit Singh",
+      "date_of_birth": "1981-12-04T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhijit Vaidya",
+      "_id": "1253888",
+      "full_name": "Abhijit Vaidya",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Malakaj Abhilash",
+      "_id": "424375",
+      "full_name": "Malakaj Mahendrakar Abhilash",
+      "date_of_birth": "1990-04-27T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Mundekatt Thankappan",
+      "_id": "26472",
+      "full_name": "Mundekatt Abhilash Thankappan",
+      "date_of_birth": "1985-12-02T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhilash Shetty",
+      "_id": "1155401",
+      "full_name": "Abhilash Shetty",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "M Abhinav",
+      "_id": "714495",
+      "full_name": "M Abhinav",
+      "date_of_birth": "1994-09-16T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Mohan Abhinav",
+      "_id": "1048875",
+      "full_name": "Mohan Abhinav",
+      "date_of_birth": "1995-02-26T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhinav Kumar",
+      "_id": "26167",
+      "full_name": "Abhinav Kumar",
+      "date_of_birth": "1984-11-07T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/434275.html?alt=1"
+   },
+   {
+      "name": "Abhinav Puri",
+      "_id": "943039",
+      "full_name": "Abhinav Puri",
+      "date_of_birth": "1994-07-22T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhinav Vishnu",
+      "_id": "1194951",
+      "full_name": "Abhinav Vishnu",
+      "date_of_birth": "1997-05-05T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Kanwar Abhinay",
+      "_id": "594566",
+      "full_name": "Kanwar Abhinay Singh",
+      "date_of_birth": "1991-06-16T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1247198.html"
+   },
+   {
+      "name": "Jayasoorya Abhiram",
+      "_id": "26284",
+      "full_name": "Jayasoorya Abhiram",
+      "date_of_birth": "1959-08-30T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhirath Reddy",
+      "_id": "1246434",
+      "full_name": "Mandadi Abhirath Reddy",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1246777.html"
+   },
+   {
+      "name": "Sud Abhiroope",
+      "_id": "961261",
+      "full_name": "Sud Abhiroope",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Kumar Abhishek",
+      "_id": "26460",
+      "full_name": "Kumar Abhishek",
+      "date_of_birth": "1988-12-07T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "S Abhishek",
+      "_id": "981641",
+      "full_name": "S Abhishek",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Shah",
+      "_id": "26444",
+      "full_name": "Abhishek Shah",
+      "date_of_birth": "1987-10-07T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Bhat",
+      "_id": "682477",
+      "full_name": "Abhishek Bhat",
+      "date_of_birth": "1989-11-19T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/705917.html"
+   },
+   {
+      "name": "Abhishek Chaudhary",
+      "_id": "26461",
+      "full_name": "Abhishek Chaudhary",
+      "date_of_birth": "1987-03-29T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Goswami",
+      "_id": "1081436",
+      "full_name": "Abhishek Goswami",
+      "date_of_birth": "1997-11-06T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Gupta",
+      "_id": "801929",
+      "full_name": "Abhishek Gupta",
+      "date_of_birth": "1990-09-30T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Kaushik",
+      "_id": "1106089",
+      "full_name": "Abhishek Kaushik",
+      "date_of_birth": "1985-12-13T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Mohan",
+      "_id": "554159",
+      "full_name": "Abhishek Mohan",
+      "date_of_birth": "1992-12-15T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Sharma",
+      "_id": "1070183",
+      "full_name": "Abhishek Sharma",
+      "date_of_birth": "2000-09-04T00:00Z",
+      "country": "India",
+      "photo": "https://www.espncricinfo.com/inline/content/image/1132211.html"
+   },
+   {
+      "name": "Abhishek Sharma",
+      "_id": "1081117",
+      "full_name": "Abhishek Sharma",
+      "date_of_birth": "",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Sharma",
+      "_id": "1131614",
+      "full_name": "Abhishek Sharma",
+      "date_of_birth": "1994-12-20T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Singh",
+      "_id": "26475",
+      "full_name": "Abhishek Singh",
+      "date_of_birth": "1986-12-20T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name": "Abhishek Singh",
+      "_id": "1064840",
+      "full_name": "Abhishek Singh Thakur",
+      "date_of_birth": "1984-11-12T00:00Z",
+      "country": "India",
+      "photo": null
+   },
+   {
+      "name":"MS Dhoni",
+      "_id":"28081",
+      "full_name":"Mahendra Singh Dhoni",
+      "country":"India",
+      "photo":"https://www.espncricinfo.com/inline/content/image/1220600.html"
+   },
+   {
+   
+      "name":"Virat Kohli",
+      "_id":"253802",
+      "full_name":"Virat Kohli",
+      "country":"India",
+      "photo":"https://www.espncricinfo.com/inline/content/image/1183835.html?alt=1"
+   },
+   {
+   "name":"Rohit Sharma",
+      "_id":"34102",
+      "full_name":"Rohit Gurunath Sharma",
+      "country":"India",
+      "photo":"https://www.espncricinfo.com/inline/content/image/1220570.html"
+   },
+   {
+   "name":"Shikhar Dhawan",
+      "_id":"28235",
+      "full_name":"Shikhar Dhawan",
+      "country":"India",
+      "photo":"https://www.espncricinfo.com/inline/content/image/1220569.html"
+   },
+   {
+      "name":"Sachin Tendulkar",
+      "_id":"35320",
+      "full_name":"Sachin Ramesh Tendulkar",
+      "country":"India",
+      "photo":"https://www.espncricinfo.com/inline/content/image/501527.html?alt=1"
+   }
+]

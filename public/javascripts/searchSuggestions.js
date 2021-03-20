@@ -1,28 +1,44 @@
 var html=""
-function findMatches(wordToMatch,players) {
-        return players.filter(player=>{
-            // here we need to figure out if the city or state matches what was searched
-            const regex= new RegExp(wordToMatch,'gi');
-            // return player.full_name.match(regex) || player.name.match(regex);
-            return (player.full_name.match(regex) || player.name.match(regex));
-        })
+function findMatches(wordToMatch,players,searchLimit) {
+        let matchArray=[];
+        const regex= new RegExp(wordToMatch,'gi');
+        for(let i=0;i<players.length && matchArray.length<searchLimit ;i++)
+        {
+            let playerFullName=players[i].full_name;
+            let playerName=players[i].name;
+            if(playerFullName==null)playerFullName="";
+            if(playerName==null)playerName="";
+
+            if(matchArray.length<searchLimit &&   (playerFullName.match(regex) || playerName.match(regex))) {matchArray.push(players[i])};      
+        }
+
+        return matchArray;
     }
-    let resultsCount=0;
+    
+let resultsCount=0;
 function displayMatches() {
-    const matchArray=findMatches(this.value,players);
-        html=matchArray.map(player=>{
+    // console.log(players);
+    const matchArray=findMatches(this.value,players,5);// 5 is the search suggestion limit
+
+    // console.log(matchArray);
+    html=matchArray.map(player=>{
     if(this.value=="") return;
 
     const regex = new RegExp(this.value, 'gi');
-    const playerFullName=player.full_name.replace(regex,`<span class="hl">${this.value}</span>`);
-    const playerName=player.name.replace(regex,`<span class="hl">${this.value}</span>`);
+    let playerFullName="";
+    let playerName="";
+
+    if(player.full_name!=null) playerFullName=player.full_name.replace(regex,`<span class="hl">${this.value}</span>`);
+    
+    if(player.name!=null) playerName=player.name.replace(regex,`<span class="hl">${this.value}</span>`);
+    
     let playerPhoto=player.photo;
     
-    if(player.photo==null)  playerPhoto="images/default-picture.png";
+    if(player.photo==null || player.photo=="null"){playerPhoto="images/default-picture.png";}
 
         // <a class="search__suggestion__link" href="/">${player.id}<img class="player__img" src="https://www.espncricinfo.com/inline/content/image/1220600.html"></img><p class="player__name"><span>MS</span> Dhoni </p> <p class="player__fullName"> Mahendra Singh Dhoni </p>  </a>
         return`
-        <a class="search__suggestion__link" href="players/${player.id}"> <img class="player__img" src="${playerPhoto}"></img><p class="player__name">${playerName}</p> <p class="player__fullName">${playerFullName} , ${player.country}</p></a>
+        <a class="search__suggestion__link" href="players/${player._id}"> <img class="player__img" src="${playerPhoto}"></img><p class="player__name">${playerName}</p> <p class="player__fullName">${playerFullName} , ${player.country}</p></a>
             `  
     }).join('');
 

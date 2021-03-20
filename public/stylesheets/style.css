@@ -191,50 +191,18 @@ z-index: 10;
 .search__suggestions{
   align-self: flex-start;
   grid-column: 1/-1;
-  /* font-size: 1.6rem; */
   width: 100%;
-  overflow-x:hidden;  
-  max-height:23rem;
-  /* height:23rem; */
-  overflow-y:scroll;       
+  overflow:hidden;  
+  /* background-color:#fff; */
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
-  background-color: red;
-  /* display: none; */
 }
-
-.search__suggestions::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.search__suggestions {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-
-/* .search__input:focus .search__suggestions, */
-
-/* .search__input:hover */
-
-.body:active search__suggestions
-{
-  /* display: block !important; */
-  background-color: pink;
-
-  
-}
-
 
 
 
 .search__suggestion__link {
-  
-  
   text-decoration: none;
   color: #000;
-
   background: white;
   
   /* border-bottom: 1px solid #D8D8D8; */
@@ -254,7 +222,9 @@ z-index: 10;
 
 
 
-
+.search__suggestion__link:last-child{
+  padding-bottom: .8rem;
+}
 
 
 

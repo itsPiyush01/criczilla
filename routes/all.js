@@ -53,7 +53,7 @@ MongoClient.connect(url, function(err, db) {
       db.close();
       res.render("all",{item:resultArray})
     })
-  });
+;''  });
 });
     
 

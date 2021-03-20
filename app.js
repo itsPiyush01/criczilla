@@ -10,6 +10,7 @@ var indexRouter= require('./routes/index');
 var usersRouter = require('./routes/users');
 var allRouter = require('./routes/all');
 var app = express();
+// var suggestionsData=require("./suggestionsData");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
