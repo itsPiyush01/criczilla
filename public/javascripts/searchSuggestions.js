@@ -1,41 +1,39 @@
 var html=""
-function findMatches(wordToMatch,players,searchLimit) {
-        let matchArray=[];
-        const regex= new RegExp(wordToMatch,'gi');
-        for(let i=0;i<players.length && matchArray.length<searchLimit ;i++)
-        {
-            let playerFullName=players[i].full_name;
-            let playerName=players[i].name;
-            if(playerFullName==null)playerFullName="";
-            if(playerName==null)playerName="";
-
-            if(matchArray.length<searchLimit &&   (playerFullName.match(regex) || playerName.match(regex))) {matchArray.push(players[i])};      
-        }
-
-        return matchArray;
-    }
+var matchArray=[];
+function getMatches(wordToMatch) {
+    console.log("GetMatch: "+wordToMatch);
     
-let resultsCount=0;
-function displayMatches() {
-    // console.log(players);
-    const matchArray=findMatches(this.value,players,5);// 5 is the search suggestion limit
+    var xhr = new XMLHttpRequest();
+    var data = {
+        wordToMatch: wordToMatch
+    };
+    xhr.open('POST', '/searchSuggestionQuery');
+    xhr.onload = function(data) {
+        // console.log('loaded', this.responseText);
+        matchArray=JSON.parse(xhr.response);
+        // execute here once again after fetching the data
+        displayMatches(wordToMatch);
 
-    // console.log(matchArray);
+    };
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify(data));
+
+}    
+
+function displayMatches(wordToMatch) {
     html=matchArray.map(player=>{
-    if(this.value=="") return;
-
-    const regex = new RegExp(this.value, 'gi');
+    if(wordToMatch=="") return;
+    const regex = new RegExp(wordToMatch, 'gi');
     let playerFullName="";
     let playerName="";
 
-    if(player.full_name!=null) playerFullName=player.full_name.replace(regex,`<span class="hl">${this.value}</span>`);
+    if(player.full_name!=null) playerFullName=player.full_name.replace(regex,`<span class="hl">${wordToMatch}</span>`);
     
-    if(player.name!=null) playerName=player.name.replace(regex,`<span class="hl">${this.value}</span>`);
+    if(player.name!=null) playerName=player.name.replace(regex,`<span class="hl">${wordToMatch}</span>`);
     
     let playerPhoto=player.photo;
     
     if(player.photo==null || player.photo=="null"){playerPhoto="images/default-picture.png";}
-
         // <a class="search__suggestion__link" href="/">${player.id}<img class="player__img" src="https://www.espncricinfo.com/inline/content/image/1220600.html"></img><p class="player__name"><span>MS</span> Dhoni </p> <p class="player__fullName"> Mahendra Singh Dhoni </p>  </a>
         return`
         <a class="search__suggestion__link" href="players/${player._id}"> <img class="player__img" src="${playerPhoto}"></img><p class="player__name">${playerName}</p> <p class="player__fullName">${playerFullName} , ${player.country}</p></a>
@@ -54,13 +52,38 @@ function displayMatches() {
     }    
     suggestions.innerHTML=html;
 
-}
+    }
+    
+
 
 const searchInput = document.querySelector('#search__input');
 const suggestions = document.querySelector('#suggestions');
-searchInput.addEventListener('change', displayMatches);
-searchInput.addEventListener('keyup', displayMatches);
+//  Every Time user type something this function will execute 
+searchInput.addEventListener('keyup', (function() {
+    let wordToMatch=this.value; 
 
+    // execute with 600ms delay
+    delay(function(){
+        if(wordToMatch.length>=3)getMatches(wordToMatch);
+    }, 600 );
+    
+    // immediately this function will execute (no delay execution)
+    displayMatches(wordToMatch);
+    console.log("DisplayMatch: "+wordToMatch);
+
+
+}));
+
+
+var delay = (function(){
+    var timer = 0;
+    return function(callback, ms){
+    clearTimeout (timer);
+    timer = setTimeout(callback, ms);
+   };
+  })();
+
+  
 // Show suggestions when click in suggestion form 
 document.querySelector('.search').addEventListener("click",(event)=>{
     // console.log("show");
