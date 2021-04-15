@@ -5,7 +5,8 @@ function getMatches(wordToMatch) {
     
     var xhr = new XMLHttpRequest();
     var data = {
-        wordToMatch: wordToMatch
+        wordToMatch: wordToMatch,
+        searchLimit:5
     };
     xhr.open('POST', '/searchSuggestionQuery');
     xhr.onload = function(data) {

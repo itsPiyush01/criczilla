@@ -43,10 +43,14 @@ a, a:hover, a:active, a:visited, a:focus {
 
 body{
   background: var(--color-main-linear-gradient); 
+  position: relative;
 }
 
 .container{
   background-color: transparent;
+  /* position: relative; */
+  /* height: max-content; */
+  display: grid;
 }
 
 .header {
@@ -82,7 +86,7 @@ body{
 
 
 .search{
-/* background-color: orangered; */
+  
 /* flex: 0 0 40%;/ */
 display: grid;
 /* margin-top: 1rem; */
@@ -311,16 +315,49 @@ animation-direction: alternate-reverse;
 
 
 
-main{
-  height: 80vh;
+.main{
+  min-height: 100vh;
   background: var(--color-main-linear-gradient);
+  padding: 1rem;
 }
 
-footer{
-  height:20vh;
-  background-color: rgba(13,143,79, 0.45);
-  font-size:2rem;
+.result-stats{
+  /* color: #8C9094;
+  color: white; */
+  font-size: 1.4rem;
 }
+
+
+
+.players{
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* margin: 10vh; */
+}
+
+.player{
+  margin: .5rem;
+  color: #000;
+
+
+
+}
+
+
+
+footer{
+  /* height:20vh; */
+  /* height: 10%; */
+  /* height: 10rem; */
+  background-color: rgba(13,143,79, 0.45);
+  /* clear: both; */
+  position: relative;
+  height: min-content;
+  bottom: 0;
+
+}
+
 
 
 .disable{

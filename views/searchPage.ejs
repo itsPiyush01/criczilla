@@ -1,0 +1,15 @@
+<%- include("partials/header"); %>
+<div class="main">
+  <p class="result-stats"> <span>About <%=resultStats.noOfResults%> </span> results<span> ( <%=resultStats.time%> seconds)</span> </p>
+  <%=searchedWord.noOfResults%>
+  <div class="players">
+    <% players.forEach(player =>{%>
+
+    <div class="player">
+      <p> <%=player.full_name%></p>
+    </div>
+    <%})%>
+  </div>
+  
+  </div>
+<%- include("partials/footer"); %>

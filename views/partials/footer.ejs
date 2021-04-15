@@ -1,5 +1,16 @@
 <footer>
     footer content
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed. Massa eget egestas purus viverra accumsan in. Accumsan tortor posuere ac ut. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Egestas congue quisque egestas diam in arcu. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Eget arcu dictum varius duis at consectetur lorem donec massa. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices tincidunt arcu non sodales neque sodales. Erat nam at lectus urna duis convallis convallis tellus id. Cursus turpis massa tincidunt dui ut ornare lectus sit. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus.
+
+Arcu felis bibendum ut tristique et egestas quis ipsum. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Quis risus sed vulputate odio ut enim. Lorem ipsum dolor sit amet consectetur adipiscing. Lectus nulla at volutpat diam. Urna nunc id cursus metus aliquam eleifend. Auctor augue mauris augue neque gravida. Vel pharetra vel turpis nunc eget lorem. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Donec et odio pellentesque diam volutpat commodo sed egestas. Arcu risus quis varius quam. Accumsan lacus vel facilisis volutpat est. In vitae turpis massa sed elementum tempus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Fringilla urna porttitor rhoncus dolor purus non.
+
+Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Sit amet purus gravida quis blandit turpis cursus. Urna porttitor rhoncus dolor purus non enim praesent elementum. Fermentum odio eu feugiat pretium nibh. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Volutpat ac tincidunt vitae semper quis lectus nulla. Feugiat in fermentum posuere urna nec tincidunt praesent. Ullamcorper a lacus vestibulum sed arcu non. Quam pellentesque nec nam aliquam sem et tortor consequat. Gravida cum sociis natoque penatibus. Mi proin sed libero enim. Vestibulum sed arcu non odio euismod lacinia at quis risus.
+
+Nisl condimentum id venenatis a condimentum. Libero justo laoreet sit amet cursus sit amet dictum. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Rhoncus dolor purus non enim. Mauris ultrices eros in cursus turpis massa. A lacus vestibulum sed arcu. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Massa ultricies mi quis hendrerit dolor magna eget est. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. In fermentum et sollicitudin ac orci. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Magna eget est lorem ipsum. Vel eros donec ac odio tempor orci dapibus. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Tempor orci eu lobortis elementum nibh tellus molestie nunc. In mollis nunc sed id semper risus in. Etiam sit amet nisl purus. Mi sit amet mauris commodo.
+
+Urna et pharetra pharetra massa massa. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Sollicitudin aliquam ultrices sagittis orci a. Amet purus gravida quis blandit. Risus at ultrices mi tempus imperdiet nulla. Nibh praesent tristique magna sit amet purus. Hac habitasse platea dictumst vestibulum rhoncus. Aliquam malesuada bibendum arcu vitae. Elementum eu facilisis sed odio morbi quis. Scelerisque varius morbi enim nunc faucibus. Sem integer vitae justo eget magna fermentum. Ut tellus elementum sagittis vitae et leo duis ut. Porta lorem mollis aliquam ut porttitor leo a. Lorem ipsum dolor sit amet consectetur adipiscing. Donec enim diam vulputate ut pharetra. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Feugiat in ante metus dictum at tempor commodo ullamcorper a.s
+  
+    
 </footer>
 </div>
 <script src="./javascripts/typewriter.js"></script>
@@ -9,6 +20,11 @@
     writeDelay: 100,
     deleteDelay: 30
 })
+
+var searchedWord = '<%- JSON.stringify(searchedWord) %>';
+document.getElementById("search__input").value = searchedWord.replaceAll(`"`,``);
+// console.log(searchedWord);  
+
 
 // const  = <% //- JSON.stringify(matchArray) %>;
 

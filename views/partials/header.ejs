@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Righteous&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Righteous&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">  -->
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -16,9 +15,10 @@
     <header class="header">
     <a class="header__logo" href="/">CricZilla</a>
    
-    <form class="search" href="/all" >
+    <form class="search" action="/search" method="post" >
     <!-- <form class="search" href="/all" onclick="showSuggestions(this)"> -->
-        <input class="search__input" id="search__input" type="text" placeholder="" autocomplete="off">
+        <input class="search__input" name="search__input" id="search__input" type="text" placeholder="" autocomplete="off" required >
+       <!-- <object name="wordToMatch"></object> -->
         <!-- <button type="submit" class="search__button">
             <div class="search__icon"></div>
         </button> -->
