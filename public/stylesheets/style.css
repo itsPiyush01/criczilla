@@ -338,10 +338,17 @@ animation-direction: alternate-reverse;
 
 .player{
   margin: .5rem;
-  color: #000;
+  /* background-color: red; */
+  color: #fff;
+  background-color:rgba(0, 0, 0,.5);
+  border-radius: .5rem;
+  overflow: hidden;
+}
 
 
-
+.players .player__img{
+  height: 10rem;
+  width: 10rem;
 }
 
 

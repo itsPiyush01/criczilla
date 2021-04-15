@@ -3,13 +3,15 @@
   <p class="result-stats"> <span>About <%=resultStats.noOfResults%> </span> results<span> ( <%=resultStats.time%> seconds)</span> </p>
   <%=searchedWord.noOfResults%>
   <div class="players">
-    <% players.forEach(player =>{%>
-
+    <% players.forEach(player=>{%>
     <div class="player">
+      <object class="player__img" data="<%=player.photo%>" type="image/jpg">
+        <img class="player__img" src="images/default-picture.png" alt="image">
+      </object>
       <p> <%=player.full_name%></p>
     </div>
-    <%})%>
+  <%})%>
   </div>
   
   </div>
-<%- include("partials/footer"); %>
+  <%- include("partials/footer"); %>

@@ -96,12 +96,12 @@ function processMatchArray(wordToMatch,searchLimit) {
 
 
 
-router.all("/live",function (req,res) {
-  var xhr = new XMLHttpRequest();
-  let content="Live Score HERE"
-  // console.log(players);
-  res.render("index",{content:content,title:"LIVE MATCH",searchedWord:""})
-})
+// router.all("/live",function (req,res) {
+//   var xhr = new XMLHttpRequest();
+//   let content="Live Score HERE"
+//   // console.log(players);
+//   res.render("index",{content:content,title:"LIVE MATCH",searchedWord:""})
+// })
 
 router.all("/buzz",function (req,res) {
   throw new Error('BROKEN');
