@@ -44,9 +44,11 @@ router.post("/searchSuggestionQuery",function(req,res){
   res.send(searchObject);
 })
 
-router.post("/search",function(req,res){
+router.get("/search",function(req,res){
    
-  let wordToMatch=req.body.search__input;
+  // let wordToMatch=req.body.search__input;
+  let wordToMatch=req.query.search__input;
+
   var start = new Date()
   let limit=players.length;
   // let limit=100;

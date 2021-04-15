@@ -5,13 +5,11 @@
   <div class="players">
     <% players.forEach(player=>{%>
     <div class="player">
-      <object class="player__img" data="<%=player.photo%>" type="image/jpg">
-        <img class="player__img" src="images/default-picture.png" alt="image">
-      </object>
+        <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"images/default-picture.png"%> alt="image">
       <p> <%=player.full_name%></p>
     </div>
   <%})%>
   </div>
-  
+
   </div>
   <%- include("partials/footer"); %>
