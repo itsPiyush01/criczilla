@@ -105,21 +105,21 @@ function processMatchArray(wordToMatch,searchLimit) {
 //   res.render("index",{content:content,title:"LIVE MATCH",searchedWord:""})
 // })
 
-router.all("/buzz",function (req,res) {
-  throw new Error('BROKEN');
-  let content="BUZZ"
-  // console.log(players);
-  res.render("index",{content:content,title:"BUZZ",searchedWord:""})
+// router.all("/buzz",function (req,res) {
+//   throw new Error('BROKEN');
+//   let content="BUZZ"
+//   // console.log(players);
+//   res.render("index",{content:content,title:"BUZZ",searchedWord:""})
 
-})
+// })
 
 
-router.all("/news",function (req,res) {
-  let content="NEWS"
-  // console.log(players);
-  res.render("index",{content:content,title:"NEWS...",searchedWord:""})
+// router.all("/news",function (req,res) {
+//   let content="NEWS"
+//   // console.log(players);
+//   res.render("index",{content:content,title:"NEWS...",searchedWord:""})
 
-})
+// })
 
 
 

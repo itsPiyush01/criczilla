@@ -1,0 +1,19 @@
+<%- include("partials/header"); %>
+<main class="main">
+    <div class="wrapper">
+        <div class="news">
+            <% if(a.articles != null) { %>
+            <% a.articles.forEach(function(a, index) { %>
+                <a href="#"<%- a.source.name %> class="news__card">
+                    <img src="<%- a.urlToImage %>" >
+                    <h2><%- a.title %></h2>
+                    <p><%- a.description %></p>
+                </a>
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %>
+        </div>
+    </div>  
+</main>
+<%- include("partials/footer"); %>
