@@ -12,8 +12,14 @@ var rawData = fs.readFileSync(path.join(__dirname,"..","data", 'players.json'));
 // var rawData = fs.readFileSync(path.join(__dirname,"..","data", 'sample_search_2.json'));
 var players = JSON.parse(rawData);
 
+var d = new Date("1981-07-07T00:00Z");
+console.log(d.getDate());
+console.log(d.getMonth());
 
-// processMatchArray("dhoni",5);
+
+
+
+
 
 router.get("/",function (req,res) {
   let content="text content"

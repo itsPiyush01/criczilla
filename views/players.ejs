@@ -1,0 +1,23 @@
+<div class="players">
+    <script> 
+      let player__DOB ; 
+      let date;
+    </script>
+    <% players.forEach(player=>{%>
+        <a class="player" href="/players<%=player._id%>">
+          <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"images/default-picture.png"%> alt="image">
+          <p class="player__name"> <%=player.name%></p>
+          <p class="player__full__name">Full Name: <%=player.full_name%></p>
+          
+          <%//console.log(typeof player.date_of_birth)%>
+          <% player__DOB=JSON.stringify(player.date_of_birth)%>
+          <%  date=new Date(player.date_of_birth ) %>
+          
+          <% if (date.getFullYear()) { %>
+          <p class="player__date__of__birth">Date of Birth : <%=date.getDate()%>-<%=date.getMonth()+1%>-<%=date.getFullYear()%> </p>
+          <% } %>
+            
+            <p class="player__country">Country : <%=player.country%></p>
+        </a>
+      <%})%>
+      </div>
