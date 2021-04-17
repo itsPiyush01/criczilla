@@ -10,6 +10,7 @@ var indexRouter= require('./routes/index');
 var usersRouter = require('./routes/users');
 var allRouter = require('./routes/all');
 var liveRouter = require('./routes/live');
+var newsRouter = require('./routes/news');
 // var searchRouter=require("./routes/search");
 var app = express();
 // var suggestionsData=require("./suggestionsData");
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/all", allRouter);
 app.use("/live", liveRouter);
+app.use("/news", newsRouter);
 // app.use("/search",searchRouter);
 
 
