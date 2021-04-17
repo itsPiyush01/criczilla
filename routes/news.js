@@ -23,13 +23,4 @@ router.get('/', async(req, res) => {
     } 
 })
 
-//news/pageid
-router.get('/page', async(req, res) => {
-  
-})
-
-
-
-
-
 module.exports = router 
