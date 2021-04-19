@@ -12,9 +12,6 @@ var rawData = fs.readFileSync(path.join(__dirname,"..","data", 'players.json'));
 // var rawData = fs.readFileSync(path.join(__dirname,"..","data", 'sample_search_2.json'));
 var players = JSON.parse(rawData);
 
-
-// processMatchArray("dhoni",5);
-
 router.get("/",function (req,res) {
   let content="text content"
 
@@ -48,6 +45,7 @@ router.get("/search",function(req,res){
    
   // let wordToMatch=req.body.search__input;
   let wordToMatch=req.query.search__input;
+  wordToMatch=wordToMatch.replace(/\s+/g, ' ').trim();
 
   var start = new Date()
   let limit=players.length;
@@ -57,7 +55,7 @@ router.get("/search",function(req,res){
   let searchObject=processMatchArray(wordToMatch,limit);//wordToMatch,limit=first 100 players  
   let noOfResults=Object.keys(searchObject).length;
   // console.log(typeof searchObject);
-  searchObject
+  // searchObject
   var end = (new Date() - start)/1000;//to convert ms to s 
   // console.info('Execution time:%ds', (end/1000)) 
     // res.send("hello")

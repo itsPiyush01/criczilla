@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f6f6f6;
 }
 
@@ -9,7 +9,7 @@ h2 { font-size: 1.6rem; }
 
 
 
-.wrapper { padding: 0 1rem }
+.wrapper { padding:  1rem; }
 
 .news {
     display: grid;
@@ -25,13 +25,19 @@ h2 { font-size: 1.6rem; }
    
         transition: transform .2s;
         border-radius: 5px;
+<<<<<<< HEAD
         z-index: 100;
         text-align: left;
         
+=======
+        /* z-index: 50; */
+>>>>>>> 55e2ec51a746a3de2ea0c4fb940bf6be321b37a0
     }
         .news__card:hover {
             box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
             transform: scale(1.1);
+            z-index: 50;
+
         }
         .border{
             border-radius: 5px;
