@@ -34,10 +34,10 @@ function displayMatches(wordToMatch) {
     
     let playerPhoto=player.photo;
     
-    if(player.photo==null || player.photo=="null"){playerPhoto="images/default-picture.png";}
+    if(player.photo==null || player.photo=="null"){playerPhoto="/images/default-picture.png";}
         // <a class="search__suggestion__link" href="/">${player.id}<img class="player__img" src="https://www.espncricinfo.com/inline/content/image/1220600.html"></img><p class="player__name"><span>MS</span> Dhoni </p> <p class="player__fullName"> Mahendra Singh Dhoni </p>  </a>
         return`
-        <a class="search__suggestion__link" href="players/${player._id}"> <img class="player__img" src="${playerPhoto}"></img><p class="player__name">${playerName}</p> <p class="player__fullName">${playerFullName} , ${player.country}</p></a>
+        <a class="search__suggestion__link" href="/player/${player._id}"> <img class="player__img" src="${playerPhoto}"></img><p class="player__name">${playerName}</p> <p class="player__fullName">${playerFullName} , ${player.country}</p></a>
             `  
     }).join('');
 
@@ -70,10 +70,22 @@ searchInput.addEventListener('keyup', (function() {
     
     // immediately this function will execute (no delay execution)
     displayMatches(wordToMatch);
-    console.log("DisplayMatch: "+wordToMatch);
+    // console.log("DisplayMatch: "+wordToMatch);
+    console.log("keyup");
 
 
 }));
+
+// searchInput.addEventListener('onchange', (function() {
+//     let wordToMatch=this.value; 
+//     // immediately this function will execute (no delay execution)
+//     if(wordToMatch.length>=3)getMatches(wordToMatch);
+//     // console.log("DisplayMatch: "+wordToMatch);
+//     console.log("OnChange");
+
+
+// }));
+
 
 
 var delay = (function(){

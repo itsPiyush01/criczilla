@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 var allRouter = require('./routes/all');
 var liveRouter = require('./routes/live');
 var newsRouter = require('./routes/news');
+var playerRouter=require("./routes/player");
 // var searchRouter=require("./routes/search");
 var app = express();
 // var suggestionsData=require("./suggestionsData");
@@ -30,6 +31,7 @@ app.use('/users', usersRouter);
 app.use("/all", allRouter);
 app.use("/live", liveRouter);
 app.use("/news", newsRouter);
+app.use("/player", playerRouter);
 // app.use("/search",searchRouter);
 
 

@@ -4,8 +4,8 @@
       let date;
     </script>
     <% players.forEach(player=>{%>
-        <a class="player" href="/players<%=player._id%>">
-          <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"images/default-picture.png"%> alt="image">
+        <a class="player" href="/player/<%=player._id%>">
+          <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"/images/default-picture.png"%> alt="image">
           <p class="player__name"> <%=player.name%></p>
           <p class="player__full__name">Full Name: <%=player.full_name%></p>
           

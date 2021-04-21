@@ -44,7 +44,7 @@ MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     // console.log(result.Country);
     result.forEach(  (r)=>{
-      resultArray.push(r);
+        resultArray.push(r);
       // console.log(r.NAME);
     },  
     

@@ -1,0 +1,168 @@
+<%- include("partials/header"); %>
+<main class="main">
+<div class="player__card">
+    <img class="player__img" src=<%-(player.photo!="null" && player.photo)?""+player.photo:"/images/default-picture.png"%> alt="image">
+    <h1 class="player__name"><%=player.name%></h1>
+    
+
+    <div class="player__details">
+        <% if (player.full_name!="null" && player.full_name){ %>
+            <p class="player__detail">Full Name: <%=player.full_name%></p>
+        <% } %>
+     
+        <% if (player.batting_style!="null" && player.batting_style ) { %>
+            <p class="player__detail">Batting Style: <%=player.batting_style%></p>
+        <% } %>
+        
+        <% if (player.bowling_style!="null" && player.bowling_style ){ %>
+            <p class="player__detail">Bowling Style:<%=player.bowling_style%></p>
+        <% } %>
+     
+        <!-- DOB -->
+        <% if (player.date_of_birth!="null" && player.date_of_birth ){ %>
+            
+            <% let  date=new Date(player.date_of_birth ) %>
+            
+            <% if (date.getFullYear()) { %>
+            <p class="player__detail">Date of Birth : <%=date.getDate()%>-<%=date.getMonth()+1%>-<%=date.getFullYear()%> </p>
+            <% } %>
+
+
+        <% } %>
+            
+        <!--  -->
+
+        <% if (player.country!="null"  && player.country){ %>
+            <p class="player__detail">Country: <%=player.country%></p>
+        <% } %>
+
+               
+        <% if (player.role!="Unknown" && player.role){ %>
+            <p class="player__detail">Role: <%=player.role%></p>
+        <% } %>
+     
+
+        <% if (player.bat_avg!="null" && player.bat_avg ) { %>
+            <h1 player__detail> BAT AVG</h1>
+
+            <table>
+                <tr>
+                        <th>BAT AVG</th>
+                        <% Object.keys(player.bat_avg.T20s).forEach(function(k ) { %>
+                            <th><%=k.replace(/_/g , " ")%></th>
+                            <% }); %> 
+                </tr>
+                
+            <% Object.keys(player.bat_avg).forEach(function(key) { %>
+            <%//console.log(key)%>
+
+                <tr>
+                    <th><%=key%></th>
+                    <% Object.keys(player.bat_avg.T20s).forEach(function(k) { %>
+                    <td><%=player.bat_avg[key][k]%></td>
+                        
+                <% }); %>         
+                </tr>
+            <% }); %>
+        </table>       
+        <%}%>
+
+        
+        <% if (player.bowl_avg!="null" &&   player.bowl_avg) { %>
+            <h1> BOWL AVG</h1>
+
+            <table>
+                <tr>
+                        <th>BOWL AVG</th>
+                        <% Object.keys(player.bowl_avg.T20s).forEach(function(k) { %>
+                        <th><%=k.replace(/_/g , " ")%></th>
+                        <% }); %> 
+                </tr>
+                
+            <% Object.keys(player.bowl_avg).forEach(function(key) { %>
+            <%//console.log(key)%>
+
+                <tr>
+                    <th><%=key%></th>
+                    <% Object.keys(player.bowl_avg.T20s).forEach(function(k) { %>
+                    <td><%=player.bowl_avg[key][k]%></td>
+                        
+                <% }); %>         
+                </tr>
+            <% }); %>
+       
+            
+        </table>       
+        <%}%>
+
+
+        <% if (player.last_first_class!="null" && player.last_first_class){ %>
+            <p class="player__detail">Last First Class:<%=player.last_first_class%></p>
+        <% } %>
+
+     
+        <% if (player.first_class_debut!="null" && player.first_class_debut ){ %>
+            <p class="player__detail">First Class Debut:<%=player.first_class_debut%></p>
+        <% } %>
+     
+   
+        <% if (player.last_first_class!="null"  && player.last_first_class){ %>
+            <p class="player__detail">Last First Class:<%=player.last_first_class%></p>
+        <% } %>
+     
+        <% if (player.last_list_a!="null" && player.last_list_a ){ %>
+            <p class="player__detail">Last List A:  <%=player.last_list_a%></p>
+        <% } %>
+     
+        <% if (player.last_odi!="null" && player.last_odi){ %>
+            <p class="player__detail">Last Odi: <%=player.last_odi%></p>
+        <% } %>
+     
+        <% if (player.last_t20!="null" && player.last_t20){ %>
+            <p class="player__detail">last T20: <%=player.last_t20%></p>
+        <% } %>
+     
+        <% if (player.last_t20i!="null" && player.last_t20i ){ %>
+            <p class="player__detail">last_t20i : <%=player.last_t20i%></p>
+        <% } %>
+     
+        <% if (player.last_test!="null" && player.last_test){ %>
+            <p class="player__detail">last_test : <%=player.last_test%></p>
+        <% } %>
+     
+        <% if (player.list_a_debut!="null" && player.list_a_debut){ %>
+            <p class="player__detail"> list_a_debut : <%=player.list_a_debut%></p>
+        <% } %>
+     
+        <% if (player.major_teams!="null" && player.major_teams){ %>
+            <p class="player__detail">major_teams : <%=player.major_teams%></p>
+        <% } %>
+        
+        <% if (player.odi_debut!="null" && player.odi_debut){ %>
+            <p class="player__detail">odi_debut :<%=player.odi_debut%></p>
+        <% } %>
+     
+ 
+        
+        <% if (player.t20_debut!="null" && player.t20_debut ){ %>
+            <p class="player__detail">t20_debut: <%=player.t20_debut%></p>
+        <% } %>
+     
+        
+        <% if (player.t20i_debut!="null" && player.t20i_debut ){ %>
+            <p class="player__detail">t20i_debut: <%=player.t20i_debut%></p>
+        <% } %>
+     
+        
+        <% if (player.test_debut!="null" && player.test_debut ){ %>
+            <p class="player__detail">test_debut: <%=player.test_debut%></p>
+        <% } %>
+
+
+
+    </div>
+
+</div>
+
+</main>
+<%- include("partials/footer"); %>
