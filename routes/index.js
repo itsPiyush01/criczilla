@@ -16,10 +16,12 @@ router.get("/",function (req,res) {
   let content="text content"
 
   // console.log(players);
+  var d1 = new Date();
+  console.log(d1.getTime());
   res.render("index",{content:content,title:"Test Heading",searchedWord:""})
   
   // var searchQuery=
-  const username = req.body.username
+  // const username = req.body.username
   //...
   // res.end()
 })
