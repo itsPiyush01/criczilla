@@ -1,0 +1,18 @@
+<table>
+    <tr>
+            <th><%=bowlORBat%></th>
+            <% Object.keys(avgOF[firstObject]).forEach(function(k ) { %>
+                <th><%=k.replace(/_/g , " ")%></th>
+                <% }); %> 
+    </tr>
+    
+<% Object.keys(avgOF).forEach(function(key) { %>
+    <tr>
+        <th><%=key%></th>
+        <% Object.keys(avgOF[firstObject]).forEach(function(k) { %>
+        <td><%=avgOF[key][k]%></td>
+            
+    <% }); %>         
+    </tr>
+<% }); %>
+</table>  
