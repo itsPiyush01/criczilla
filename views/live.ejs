@@ -4,11 +4,13 @@
         <div class="news">
 
 
-             
             
+             
+         
+
             <% a.matches.forEach(function(a, index) { %>
                 
-                <a href="/article/<%- a.unique_id %> " class="news__card">
+                <a href="/live/article/<%- a.unique_id %> " class="news__card">
                     <!-- <img src="" class="border" > -->
                     <h2><%- a["team-1"] %>  vs <%- a["team-2"] %></h2>
                     <br>
@@ -16,6 +18,7 @@
                     <!-- <p class="newsdes"></p>       -->
                     </a>              
             <% }) %>
+            
             
         </div>
     </div> 
