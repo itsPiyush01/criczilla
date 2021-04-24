@@ -78,6 +78,10 @@ body{
   text-decoration: none;
 }
 
+.happy__birthday{
+  font-size: 2.5rem;
+  /* color: ; */
+}
 
 
 
@@ -348,31 +352,70 @@ animation-direction: alternate-reverse;
   /* margin: 10vh; */
 }
 
-.player{
-  /* margin: .5rem; */
-  /* padding: .1rem; */
-  /* background-color: red; */
-  color: #fff;
-  background-color:rgba(0, 0, 0,.5);
+.player__div{
+  display: grid;
+  grid-template-rows :1fr;
+  background-color: #fff;
   border-radius: .5rem;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.player__div.add__links{
+  grid-template-columns: 1fr 4rem;
+
+}
+
+.player{
+  grid-column: 1 /2 ;
   overflow: hidden;
   display: grid;
   height: 10rem;
+  color: #000; 
   grid-template-rows:repeat(4,min-content);
   grid-template-columns:10rem 1fr;
   grid-gap: .5rem;
   font-weight: 400;
   font-size: 1.3rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   transition: all .2s;
-  }
   
-.player:hover{
+}
+
+
+.player__share{
+  grid-column: 2/ 3 ;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;  
+  /* overflow: hidden; */
+}
+
+.player__share__link {
+  background-color: #fff;
+}
+
+.player__share__link > img{
+  width: 100%;
+  height: 3.1rem;
+  transition: all .5s;  
+}
+
+.player__share__link:hover{
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  
+  transform: scale(1.2);
+  /* 
+  background-color: red; */
+}
+
+
+.player__div:hover{
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transform: translateY(-.1rem);
 }
 
-.player:active{
+.player__div:active{
   transform: translateY(0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -383,7 +426,10 @@ animation-direction: alternate-reverse;
 font-size: 1.6rem;
 font-weight: 700;
 }
-
+.player >.player__name,.player__full__name,.player__date__of__birth,.player__country{
+  grid-column: 2 / 3;
+  grid-row-gap: 0;
+}
 
 .player .player__img{
   width: 100%;
@@ -394,6 +440,7 @@ font-weight: 700;
   border-radius: .5rem;  
   grid-row: 1/-1;
   grid-column:1 / 2;
+  /* ma-right:1rem; */
   object-fit: fill;
   
 
@@ -425,7 +472,6 @@ font-weight: 700;
 
 
 .player__card .player__name{
-
     text-shadow: .1rem .2rem .1rem  #b0a078;
 }
 
@@ -529,8 +575,17 @@ footer{
   position: relative;
   height: min-content;
   bottom: 0;
-
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 4.5rem;
+  text-align: center;
 }
+
+footer a{
+  color: #fff;
+}
+
+
 
 
 
@@ -540,4 +595,13 @@ footer{
 
 .enable{
   display: block !important;
+}
+
+
+/* Home Page Players Style */
+
+.player__modified {
+  background-color: orangered;
+  /* player__modified */
+
 }

@@ -16,9 +16,43 @@ router.get("/",function (req,res) {
   let content="text content"
 
   // console.log(players);
-  var d1 = new Date();
-  console.log(d1.getTime());
-  res.render("index",{content:content,title:"Test Heading",searchedWord:""})
+  let playersTodayBirthday=[];
+  let searchLimit=players.length;//no limit
+
+  
+  var today = new Date();
+  currentDate=today.getDate();
+  currentMonth=today.getMonth()+1;
+   for(let i=0;i<players.length && playersTodayBirthday.length<searchLimit ;i++)
+    {
+      if(players[i].date_of_birth && players[i].date_of_birth!="null" )
+      {
+            let date=new Date(players[i].date_of_birth);
+            let playerBirthDate=date.getDate();
+            let playerBirthMonth=date.getMonth()+1;
+            if(playerBirthDate==currentDate && playerBirthMonth==currentMonth)
+            {
+              playersTodayBirthday.push(players[i]);
+            }
+      }   
+    }
+    // playersTodayBirthday
+
+    function compare( a, b ) {
+      if ( a.name < b.name ){
+        return -1;
+      }
+      if ( a.name > b.name ){
+        return 1;
+      }
+      return 0;
+    }
+    
+    playersTodayBirthday.sort( compare );
+    // console.log(playersTodayBirthday);
+
+    // console.log(playersTodayBirthday.length);
+    res.render("index",{players:playersTodayBirthday,searchedWord:""})
   
   // var searchQuery=
   // const username = req.body.username
@@ -68,7 +102,7 @@ router.get("/search",function(req,res){
 
     // console.log(resultStats.noOfResults+" "+resultStats.time);
     
-    
+
     res.render("searchPage",{players:searchObject,title:"Test Heading",searchedWord:wordToMatch,resultStats:resultStats})
  })
 

@@ -1,6 +1,7 @@
 <%- include("partials/header"); %>
 <main class="main">
-  <h1><%=title %></h1>
-  <h2><%=content %></h2>
+  <h1 class="happy__birthday">Wish Happy Birthday To Your Favorite Player 🎉🎉</h1>
+
+  <%- include("players",{isShowShareLinks:true}); %>    
 </main>
-<%- include("partials/footer"); %>
+  <%- include("partials/footer"); %>

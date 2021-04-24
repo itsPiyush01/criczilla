@@ -2,6 +2,6 @@
 <div class="main">
   <p class="result-stats"> <span>About <%=resultStats.noOfResults%> </span> results<span> ( <%=resultStats.time%> seconds)</span> </p>
   <%=searchedWord.noOfResults%>
-  <%- include("players"); %>
+  <%- include("players",{isShowShareLinks:false}); %>    
 </div>
 <%- include("partials/footer"); %>

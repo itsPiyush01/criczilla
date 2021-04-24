@@ -4,9 +4,11 @@
       let date;
     </script>
     <% players.forEach(player=>{%>
-        <a class="player" href="/player/<%=player._id%>">
-          <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"/images/default-picture.png"%> alt="image">
-          <p class="player__name"> <%=player.name%></p>
+        <div class="player__div <%-(isShowShareLinks)?"add__links":"" %>">
+        <a class="player"href="/player/<%=player._id%>">
+           <img class="player__img" src=<%=player.photo!="null"?""+player.photo:"/images/default-picture.png"%> alt="image">
+           <!-- <img class="player__img" src=<%=player.photo!="null"?"":"/images/default-picture.png"%> alt="image"> -->
+           <p class="player__name"> <%=player.name%></p>
           <p class="player__full__name">Full Name: <%=player.full_name%></p>
           
           <%//console.log(typeof player.date_of_birth)%>
@@ -16,8 +18,23 @@
           <% if (date.getFullYear()) { %>
           <p class="player__date__of__birth">Date of Birth : <%=date.getDate()%>-<%=date.getMonth()+1%>-<%=date.getFullYear()%> </p>
           <% } %>
-            
             <p class="player__country">Country : <%=player.country%></p>
         </a>
-      <%})%>
+        <div class="player__share <%-isShowShareLinks?"":"disable" %>">
+          <a  class="player__share__link">
+            <img src="https://img.icons8.com/plasticine/100/26e07f/facebook.png"/>
+          </a>
+          
+          <a  class="player__share__link twitter-share-button" href="https://twitter.com/intent/tweet?text=✨✨Wish You very Happy Birthday %23<%=player.name.replace(/[ -]/g,"_")%>✨✨" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/plasticine/100/26e07f/twitter--v2.png"/>
+          </a>
+            <a  class="player__share__link">
+            <img src="https://img.icons8.com/doodle/48/26e07f/share.png"/>
+          </a>
       </div>
+        </div>
+      <%})%>
+</div>
+
+
+<!-- when someone click on the button it will redirect to twitter and post pre written text -->
