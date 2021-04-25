@@ -21,9 +21,14 @@ router.get("/",function (req,res) {
 
   
   var today = new Date();
-  currentDate=today.getDate();
-  currentMonth=today.getMonth()+1;
-   for(let i=0;i<players.length && playersTodayBirthday.length<searchLimit ;i++)
+  // convertTZ("2012/04/10 10:10:30 +0000", "/Asia/Kolkata") 
+  // console.log(today);
+  let IndiaTime = convertTZ(today,"Asia/Kolkata");
+  currentDate=IndiaTime.getDate();
+  currentMonth=IndiaTime.getMonth()+1;
+  
+
+  for(let i=0;i<players.length && playersTodayBirthday.length<searchLimit ;i++)
     {
       if(players[i].date_of_birth && players[i].date_of_birth!="null" )
       {
@@ -131,6 +136,9 @@ function processMatchArray(wordToMatch,searchLimit) {
 }
 
 
+function convertTZ(date, tzString) {
+  return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
+}
 
 // router.all("/live",function (req,res) {
 //   var xhr = new XMLHttpRequest();
