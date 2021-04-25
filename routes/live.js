@@ -23,5 +23,32 @@ router.get('/', async(req, res) => {
         }
     } 
 })
+router.get('/article/:id', async(req, res) => {
+    let articleID = req.params.id;
+    // live/article/1212
+    console.log(articleID);
 
+    // res.send(`<h1>${articleID}</h1>`)
+    //ejslint views/livescoresingle.ejs
+    try {
+        
+        const scoreAPI = await axios.get(`https://cricapi.com/api/cricketScore?apikey=XK48y5FUGMcCRmUDe9p5iaSQQox2&unique_id=${articleID}`)
+        const fanAPI = await axios.get(`https://cricapi.com/api/fantasySummary?apikey=XK48y5FUGMcCRmUDe9p5iaSQQox2&unique_id=${articleID}`)
+        res.render('livescoresingle', { article : scoreAPI.data , zarticle : fanAPI.data})
+        
+    } catch (err) {
+        if(err.response) {
+            res.render('livescoresingle', { article : null , zarticle: null})
+            console.log(err.response.data)
+            console.log(err.response.status)
+            console.log(err.response.headers)
+        } else if(err.requiest) {
+            res.render('livescoresingle', { article : null , zarticle:null})
+            console.log(err.requiest)
+        } else {
+            res.render('livescoresingle', { article : null,zarticle:null })
+            console.error('Error', err.message)
+        }
+    } 
+})
 module.exports = router 

@@ -5,13 +5,14 @@
             <% if(a.articles != null) { %>
             <% a.articles.forEach(function(a, index) { %>
                 
-                <a href="/article/<%- a.source.name %> " class="news__card">
+                <a href="<%- a.url %> " class="news__card">
                     <img src="<%- a.urlToImage %>" class="border" >
                     <h2><%- a.title %></h2>
                     <br>
                     <p class="newsdes"><%- a.description %></p>      
                     </a>              
             <% }) %>
+            
             <% } else { %>
                 No posts found.
             <% } %>

@@ -1,0 +1,46 @@
+<%- include("partials/header"); %>
+
+<main class="main">
+    <div class="wrapper">
+        <div class="news-single">
+            <h2><a href="/live">←- Back</a></h2>
+
+            <h1><%- article.score %></h1>
+            <h2><%- zarticle.type %></h2>
+            <br />
+            <h1>Score Card</h1>
+            <br />
+            <h3>Toss Won by: <%-zarticle.data["toss_winner_team"] %></h3>
+
+            <% zarticle.data.batting.forEach(function(zarticle, index) { %>
+            <h2><%-zarticle.title %></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Batsmen</th>
+                        <th scope="col"></th>
+                        <th scope="col">Runs(Balls)</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>Strike Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% zarticle.scores.forEach(function(zarticle, index) { %>
+                    <tr>
+                        <td><%-zarticle["batsman"] %></td>
+                        <td><%-zarticle["dismissal-info"] %></td>
+                        <td><%-zarticle["R"] %>(<%-zarticle["B"] %>)</td>
+                        <td><%-zarticle["4s"] %></td>
+                        <td><%-zarticle["6s"] %></td>
+                        <td><%-zarticle["SR"] %></td>
+                    </tr>
+
+                    <% }) %>
+                </tbody>
+            </table>
+            <% }) %>
+            <h1>Won by: <%-zarticle.data["winner_team"]%></h1>
+        </div>
+    </div>
+</main>
