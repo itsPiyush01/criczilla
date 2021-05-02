@@ -1,5 +1,5 @@
 <%- include("partials/header"); %>
-
+<head><link rel="stylesheet" href="/stylesheets/style.css"></head>
 <main class="main">
     <div class="wrapper">
         <div class="news-single">
@@ -7,9 +7,9 @@
 
             <h1><%- article.score %></h1>
             <h2><%- zarticle.type %></h2>
-            <br />
+            <br>
             <h1>Score Card</h1>
-            <br />
+            <br>
             <h3>Toss Won by: <%-zarticle.data["toss_winner_team"] %></h3>
 
             <% zarticle.data.batting.forEach(function(zarticle, index) { %>
@@ -17,9 +17,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th scope="col">Batsmen</th>
-                        <th scope="col"></th>
-                        <th scope="col">Runs(Balls)</th>
+                        <th>Batsmen</th>
+                        <th></th>
+                        <th>Runs(Balls)</th>
                         <th>4s</th>
                         <th>6s</th>
                         <th>Strike Rate</th>
@@ -30,9 +30,10 @@
                     <tr>
                         <td><%-zarticle["batsman"] %></td>
                         <td><%-zarticle["dismissal-info"] %></td>
-                        <td><%-zarticle["R"] %>(<%-zarticle["B"] %>)</td>
+                        <td><strong><%-zarticle["R"] %></strong>(<%-zarticle["B"] %>)</td>
                         <td><%-zarticle["4s"] %></td>
                         <td><%-zarticle["6s"] %></td>
+                        
                         <td><%-zarticle["SR"] %></td>
                     </tr>
 
