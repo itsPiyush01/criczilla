@@ -4,7 +4,7 @@ const axios = require('axios')
 
 router.get('/', async(req, res) => {
     try {
-        const scoreAPI = await axios.get(`https://cricapi.com/api/matches?apikey=XK48y5FUGMcCRmUDe9p5iaSQQox2`)
+        const scoreAPI = await axios.get(`https://cricapi.com/api/matches?apikey=lS7GGa6OdTeJvRYUyiBxBmxZnBs2`)
 		res.render('live', { a : scoreAPI.data ,searchedWord:""})
 		
         
@@ -32,8 +32,8 @@ router.get('/article/:id', async(req, res) => {
     //ejslint views/livescoresingle.ejs
     try {
         
-        const scoreAPI = await axios.get(`https://cricapi.com/api/cricketScore?apikey=XK48y5FUGMcCRmUDe9p5iaSQQox2&unique_id=${articleID}`)
-        const fanAPI = await axios.get(`https://cricapi.com/api/fantasySummary?apikey=XK48y5FUGMcCRmUDe9p5iaSQQox2&unique_id=${articleID}`)
+        const scoreAPI = await axios.get(`https://cricapi.com/api/cricketScore?apikey=lS7GGa6OdTeJvRYUyiBxBmxZnBs2&unique_id=${articleID}`)
+        const fanAPI = await axios.get(`https://cricapi.com/api/fantasySummary?apikey=lS7GGa6OdTeJvRYUyiBxBmxZnBs2&unique_id=${articleID}`)
         res.render('livescoresingle', { article : scoreAPI.data , zarticle : fanAPI.data})
         
     } catch (err) {
