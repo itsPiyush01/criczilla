@@ -4,7 +4,7 @@ const axios = require('axios')
 
 router.get('/', async(req, res) => {
     try {
-        const scoreAPI = await axios.get(`https://cricapi.com/api/matches?apikey=lS7GGa6OdTeJvRYUyiBxBmxZnBs2`)
+        const scoreAPI = await axios.get(`https://api.cricapi.com/v1/currentMatches?apikey=47d60351-9ca6-4139-9381-149450fd7350&offset=0`)
 		res.render('live', { a : scoreAPI.data ,searchedWord:""})
 		
         
